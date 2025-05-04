@@ -10,39 +10,7 @@ function isTouchDevice() {
     return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 }
 
-if (isTouchDevice()) {
-    p1.addEventListener('touchstart', function () {
-        projectPhoto.style.display = 'block';
-        projectPhoto.src = './images/project1_photo.png';
-    });
-    p1.addEventListener('touchend', function () {
-        projectPhoto.style.display = 'none';
-    });
-
-    p2.addEventListener('touchstart', function () {
-        projectPhoto.style.display = 'block';
-        projectPhoto.src = './images/project2_photo.png';
-    });
-    p2.addEventListener('touchend', function () {
-        projectPhoto.style.display = 'none';
-    });
-
-    p3.addEventListener('touchstart', function () {
-        projectPhoto.style.display = 'block';
-        projectPhoto.src = './images/project3_photo.png';
-    });
-    p3.addEventListener('touchend', function () {
-        projectPhoto.style.display = 'none';
-    });
-
-    p4.addEventListener('touchstart', function () {
-        projectPhoto.style.display = 'block';
-        projectPhoto.src = './images/project4_photo.png';
-    });
-    p4.addEventListener('touchend', function () {
-        projectPhoto.style.display = 'none';
-    });
-} else {
+if (!isTouchDevice()) {
     p1.addEventListener('mouseover', function () {
         projectPhoto.style.display = 'block';
         projectPhoto.src = './images/project1_photo.png';
