@@ -104,22 +104,6 @@ nav a:hover{
     object-fit: contain;
 }
 
-@media only screen and (max-width:720px){
-    nav{
-        display:none;
-    }
-    #menu{
-        display:block;
-        float:right;
-        position:relative;
-    }
-}
-
-@media only screen and (max-width:690px){
-    #photo{
-       min-width: 40%;
-    }
-}
 
 #projects{
     overflow:hidden;
@@ -154,11 +138,6 @@ nav a:hover{
     max-width:40%;
     height:auto;
     object-fit: contain;
-}
-@media only screen and (max-width:1250px){
-    #project-photo{
-       min-width: 80%;
-    }
 }
 
 #skills{
@@ -196,4 +175,28 @@ footer{
     background-color: #0b3d2e;
     color: #a8e6cf;
     padding:1rem;
+}
+
+@media only screen and (max-width:1250px){
+    #project-photo{
+       min-width: 80%;
+    }
+}
+
+@media only screen and (max-width:800px){
+    nav{
+        display:none;
+    }
+    #menu{
+        display:block;
+        float:right;
+        position:relative;
+    
+    }
+}
+
+@media only screen and (max-width:690px){
+    #photo{
+       min-width: 40%;
+    }
 }
