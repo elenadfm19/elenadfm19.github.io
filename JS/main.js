@@ -42,6 +42,13 @@ if (!isTouchDevice()) {
     p4.addEventListener('mouseout', function () {
         projectPhoto.style.display = 'none';
     });
+    p5.addEventListener('mouseover', function () {
+        projectPhoto.style.display = 'block';
+        projectPhoto.src = './images/project5_photo.png';
+    });
+    p5.addEventListener('mouseout', function () {
+        projectPhoto.style.display = 'none';
+    });
 }
 
 
