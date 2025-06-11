@@ -53,7 +53,7 @@ if (!isTouchDevice()) {
     });
     p6.addEventListener('mouseover', function () {
         projectPhoto.style.display = 'block';
-        projectPhoto.src = './images/project5_photo.png';
+        projectPhoto.src = './images/project6_photo.png';
     });
     p6.addEventListener('mouseout', function () {
         projectPhoto.style.display = 'none';
