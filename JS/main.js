@@ -5,6 +5,7 @@ let p2 = document.getElementById('project2');
 let p3 = document.getElementById('project3');
 let p4 = document.getElementById('project4');
 let p5 = document.getElementById('project5');
+let p6 = document.getElementById('project6');
 let projectPhoto = document.getElementById('project-photo');
 
 function isTouchDevice() {
@@ -48,6 +49,13 @@ if (!isTouchDevice()) {
         projectPhoto.src = './images/project5_photo.png';
     });
     p5.addEventListener('mouseout', function () {
+        projectPhoto.style.display = 'none';
+    });
+    p6.addEventListener('mouseover', function () {
+        projectPhoto.style.display = 'block';
+        projectPhoto.src = './images/project5_photo.png';
+    });
+    p6.addEventListener('mouseout', function () {
         projectPhoto.style.display = 'none';
     });
 }
