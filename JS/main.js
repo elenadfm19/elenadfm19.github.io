@@ -58,6 +58,10 @@ if (!isTouchDevice()) {
     p6.addEventListener('mouseout', function () {
         projectPhoto.style.display = 'none';
     });
+    p8.addEventListener('mouseover', function () {
+        projectPhoto.style.display = 'block';
+        projectPhoto.src = './images/project8_photo.png';
+    });
 }
 
 
@@ -76,3 +80,4 @@ menuIcon.addEventListener('click', function () {
         clicked = 0;
     }
 });
+
