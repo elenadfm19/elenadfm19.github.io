@@ -6,6 +6,8 @@ let p3 = document.getElementById('project3');
 let p4 = document.getElementById('project4');
 let p5 = document.getElementById('project5');
 let p6 = document.getElementById('project6');
+let p7 = document.getElementById('project7');
+let p8 = document.getElementById('project8');
 let projectPhoto = document.getElementById('project-photo');
 
 function isTouchDevice() {
@@ -80,4 +82,5 @@ menuIcon.addEventListener('click', function () {
         clicked = 0;
     }
 });
+
 
